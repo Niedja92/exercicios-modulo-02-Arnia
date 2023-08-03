@@ -1,9 +1,9 @@
 // Exercício 5: Dado o array de strings ["Olá", "Mundo", "Javascript"], utilize o método reduce para concatenar todas as strings em uma única string.
 
-const strings = ["Olá", "Mundo", "Javascript"]
+function addStrings () {
+    return ["Olá", "Mundo", "Javascript"].reduce((acc, curr) => {
+        return acc + curr + ' '
+    }, '')
+}
 
-const addStrings = strings.reduce(function(addStrings, string) {
-    return addStrings + string
-})
-
-console.log(addStrings)
+console.log(addStrings())
